@@ -1,0 +1,84 @@
+body{
+  align-items: center;
+}
+  
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-width: 1500px;
+  width: 100%;
+  background: #93b8f5;
+  margin-bottom: 100px;
+  height:100vh;
+}
+  
+#software {
+  margin : 10px;
+  text-align: center;
+  height: 80%;
+}
+
+.software_display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+}
+
+.software_display div {
+  flex: 0 1 15%;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.software_plan {
+  height: 30vh;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #06027a;
+  transition: 0.5s;
+}
+
+.software_plan:hover {
+  background: #acabc7;
+  border: 1px solid #06027a;
+  position: relative;
+  top: -15%;
+}
+
+.software_name {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #cc3106;
+}
+
+.software_price {
+  font-size: 1.5em;
+  color: #cc3106;
+}
+
+@media only screen and (max-width : 480px) {
+
+  #content{
+    height: auto;
+  }
+
+  #software {
+    height: auto;
+  }
+
+  .software_display {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .software_display div {
+    margin: 20px 0 20px 0;
+  }
+}

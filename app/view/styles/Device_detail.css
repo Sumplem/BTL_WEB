@@ -1,0 +1,134 @@
+body{
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 1000px;
+    width: 100%;
+    background: #93b8f5;
+    margin-bottom: 100px;
+}
+
+.directory {
+    font-size: 25px;
+    margin: 20px 0 20px 10px;
+}
+
+.directory > a {
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
+
+#displayer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#display_img {
+    flex: 0 1 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_display {
+    width: 100%;
+    overflow: hidden;
+}
+
+#main_display img {
+    transition:0.3s ease-in-out;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    border-radius: 10px
+}
+
+
+#sub_display {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#sub_display div {
+    flex: 0 1 25%;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#sub_display div img {
+    -webkit-transition:all 0.3s;
+    transition:0.3s ease-in-out;
+    width:100%;
+    height:100%;
+}
+
+#sub_display div img:hover {
+    transform: scale(1.2);
+}
+
+#display_info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#display_info #price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#display_info #price #price_num {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #a12717;
+    padding-left: 10px;
+}
+
+#buy_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#buy_btn a {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #023961;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #023961;
+    background: #cf5f4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#buy_btn a:hover{
+    background: white;
+}
+
+#description {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
